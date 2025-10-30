@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input>
+
+    <material>
+         <!--<name> Fe </name>-->
+	<material_type> inclusions </material_type>
+        <fraction> 0.0027 </fraction>
+        <shape> ellipse </shape>
+        <size> 
+	        <dist_type> triang </dist_type>
+	        <loc> 3.71 </loc>
+	        <scale> 4.88 </scale>
+	        <c> 0 </c>
+	</size>
+        <aspect_ratio> 0.11 </aspect_ratio>
+        <position> <!--(x)-->
+            <dist_type> uniform </dist_type>
+            <loc> 0 </loc>
+            <scale> 306.99 </scale>
+        </position>
+        <position> <!--(y)-->
+            <dist_type> uniform </dist_type>
+            <loc> 0 </loc>
+            <scale> 179.52 </scale>
+        </position>
+	<angle> 0 </angle>
+        <color> blue </color>
+    </material>
+    
+    <material>
+        <!--<name> Al </name>-->
+	<material_type> amorphous </material_type>
+        <fraction> 0.7932 </fraction>
+        <shape> ellipse </shape>
+        <size> 
+	    <dist_type> triang </dist_type>
+	        <loc> 6.44 </loc>
+	        <scale> 7.01 </scale>
+	        <c> 0.55 </c>
+	    </size>
+        <aspect_ratio> 0.86 </aspect_ratio>
+	<angle> random </angle> 
+        <color> pink </color>
+    </material>
+    
+    <material>
+        <!--<name> Si </name>-->
+        <material_type> amorphous </material_type>
+        <fraction> 0.2041 </fraction>
+        <shape> ellipse </shape>
+        <size> 
+       	    <dist_type> triang </dist_type>
+	        <loc> 0.75 </loc>
+	        <scale> 5.24 </scale>
+	        <c> 0.30 </c>
+	    </size>
+	    <angle> random </angle>
+        <aspect_ratio> 0.76 </aspect_ratio>
+        <color> green </color>
+    </material>
+
+
+    <domain>
+        <shape> Rectangle </shape>
+        <side_lengths> 306.99,179.52 </side_lengths>
+        <corner> (0, 0) </corner>
+    </domain>
+
+
+    <settings>
+	    <seeds_kwargs> 
+	        <edgecolor> none </edgecolor>
+	        <alpha> 0.5 </alpha>
+	    </seeds_kwargs>
+	    <poly_kwargs>
+	        <linewidth> 0 </linewidth>
+	        <edgecolor> none </edgecolor>
+	    </poly_kwargs>
+	    <tri_kwargs>
+	        <linewidth> 0 </linewidth>
+	    </tri_kwargs>
+        <filetypes>
+            <seeds_plot> png </seeds_plot>
+            <poly_plot>  png </poly_plot>
+        </filetypes>
+	<rtol> fit </rtol>
+        <directory> Al10Si_Fe_XX </directory>
+        <verify> True </verify>
+        <plot_axes> False </plot_axes>
+    </settings>
+</input>
